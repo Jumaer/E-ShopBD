@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/Sub_colorAppTheme2"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/Sub_colorAppTheme2"
+        android:paddingBottom="2dp"
+        android:id="@+id/Recycler_others_settings"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

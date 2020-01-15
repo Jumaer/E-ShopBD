@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="@color/Sub_colorAppTheme2"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        android:layout_margin="2dp"
+        app:cardElevation="3dp"
+        android:id="@+id/card_all_view"
+        app:cardBackgroundColor="#FFFF"
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/all_product_image_core"
+                android:src="@drawable/ss"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/all_product_name"
+                android:textColor="@color/colorAppTheme"
+                android:layout_marginLeft="20dp"
+                android:text="Product name"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/all_product_description"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Product description"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:background="@color/Sub_colorAppTheme2"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/cross_taka_red"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"/>
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                      <RelativeLayout
+                          android:layout_weight="1"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent" >
+
+                          <TextView
+                              android:layout_marginTop="8dp"
+                              android:id="@+id/all_product_prev_price"
+                              android:layout_marginLeft="5dp"
+
+                              android:layout_alignParentLeft="true"
+                              android:text="2500"
+                              android:textStyle="bold"
+                              android:textColor="#0E0F0E"
+                              android:textSize="15sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"/>
+
+
+
+                      </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_alignParentRight="true"
+                                android:text="Taka"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorAppTheme"
+                                android:textSize="11sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/colorAppTheme"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" >
+
+                           <TextView
+                               android:layout_marginTop="8dp"
+                               android:layout_marginLeft="5dp"
+                               android:layout_alignParentLeft="true"
+                               android:id="@+id/all_product_current_price"
+                               android:text="2000"
+                               android:textStyle="bold"
+                               android:textColor="#FFFF"
+                               android:textSize="15sp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"/>
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" >
+
+
+                            <TextView
+                                android:layout_marginRight="4dp"
+                                 android:layout_marginTop="10dp"
+                                android:layout_alignParentRight="true"
+
+                                android:text="Taka"
+                                android:textStyle="bold"
+                                android:textColor="#FFFF"
+                                android:textSize="11sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@drawable/shape_discount"
+            android:layout_width="75dp"
+            android:layout_height="72dp">
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_marginTop="3dp"
+                android:textColor="#E70505"
+                android:layout_marginLeft="4dp"
+                android:text="Off"
+                android:layout_width="25dp"
+                android:layout_height="18dp"/>
+            <TextView
+                android:id="@+id/all_product_discount"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="10"
+                android:textColor="#FFFF"
+                android:layout_below="@+id/tag"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="38dp"
+                android:text="%"
+                android:layout_marginTop="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

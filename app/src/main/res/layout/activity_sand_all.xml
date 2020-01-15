@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true"
+    android:background="@color/Sub_colorAppTheme2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#FFFF"
+        android:id="@+id/card_tool"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:background="#FFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:onClick="openActivity_next_move"
+                android:id="@+id/back_to_prev_sand"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_left"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:layout_toLeftOf="@+id/cart"
+
+                android:id="@+id/search"
+                android:layout_centerVertical="true"
+                android:src="@drawable/search"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+
+                android:id="@+id/cart"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cart"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/card_tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/Sub_colorAppTheme"
+            android:id="@+id/recycle_all_sand_companies"
+            android:animateLayoutChanges="false"
+            android:layout_margin="0dp"
+            android:layout_width="85dp"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <RelativeLayout
+            android:layout_marginLeft="85dp"
+            android:id="@+id/container"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Framelayout to display Fragments -->
+            <FrameLayout
+                android:id="@+id/frame_container_sand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

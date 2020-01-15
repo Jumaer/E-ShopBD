@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Sub_colorAppTheme2">
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#ffff"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/core_image_others"
+            android:scaleType="fitXY"
+            android:src="@drawable/plumbing_others"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="195dp"
+            android:layout_width="match_parent"
+            android:layout_height="139dp">
+
+            <TextView
+                android:textColor="@color/colorAppTheme"
+                android:id="@+id/other_product_name"
+                android:layout_marginTop="0dp"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_gravity="center"
+                android:text="ProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"/>
+            <TextView
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="1dp"
+                android:textSize="12sp"
+                android:id="@+id/other_product_description"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:text="ProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorAppTheme"
+                    android:id="@+id/Price"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Product Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:textColor="#08D815"
+                    android:id="@+id/other_Price_of_product"
+                    android:layout_marginTop="0dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="ProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="#E62525"
+                    android:id="@+id/Taka_tag"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:text="Taka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorAppTheme"
+                    android:id="@+id/discount_tag"
+                    android:layout_gravity="center"
+                    android:text="Discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#08D815"
+                    android:id="@+id/other_discount"
+                    android:layout_gravity="center"
+                    android:text="Discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#08D815"
+                    android:id="@+id/discount_percent"
+                    android:layout_gravity="center"
+                    android:text="(in 100%)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

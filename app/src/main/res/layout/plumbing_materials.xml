@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Sub_colorAppTheme2">
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_marginTop="150dp"
+                android:background="@color/Sub_colorAppTheme2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="italic"
+                    android:textColor="#000000"
+                    android:text="@string/plumbing"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/Text_plumbing"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@id/Text_plumbing"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/Card_PVC_PIPES_FITTINGS"
+                    app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:src="@drawable/pvc_pipes_and_fittings"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Card_PVC_PIPES_FITTINGS"
+                    android:id="@+id/Card_GI_PIPES_FITTINGS"
+                    app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:src="@drawable/gi_pipes_and_fittings"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Card_GI_PIPES_FITTINGS"
+                    android:id="@+id/Card_others"
+                    app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp">
+                    <ImageView
+                        android:src="@drawable/others_plumbing"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

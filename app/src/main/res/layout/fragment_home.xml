@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/Sub_colorAppTheme2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:id="@+id/Scroll_view_for_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_for_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relative_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/View_core_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/relative_core_banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp">
+                            <androidx.cardview.widget.CardView
+                                app:cardElevation="6dp"
+                                app:cardCornerRadius="0dp"
+                                app:cardBackgroundColor="#fff"
+                                android:id="@+id/cardView_core_banner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <androidx.viewpager.widget.ViewPager
+                                    android:id="@+id/view_pager_forHomepage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </androidx.viewpager.widget.ViewPager>
+                            </androidx.cardview.widget.CardView>
+
+
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:background="@color/Sub_colorAppTheme"
+                            android:layout_below="@+id/relative_core_banner"
+                            android:id="@+id/dots_Layout"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="19dp">
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/relative_banner"
+                android:id="@+id/all_product_item_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:textColor="#818080"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="@string/product_description_hint"
+                    android:id="@+id/text_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_below="@+id/text_product"
+                    android:orientation="vertical"
+                    android:id="@+id/linear_card_containers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/discount_product"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:scaleType="fitXY"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/discount_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/construction_materials"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/construction_materials"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/construction_chemicals"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/construction_chemical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/plumbing_materials"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/plumbing_materials"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mm_ss_materilas"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/mm_and_ss_material"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/electrical_products"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/electrical_products"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/light_gallery"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/lighting_gallery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sanitary_fittings"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/sanitary_fittings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tiles_gallery"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/tiles_gallery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/thai_aluminium"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/thai_aluminium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/interior_materials"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/interior_materials"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hardware_and_tools"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/hardware_and_tools"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/paint_gallery"
+                        app:cardElevation="3dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/paint_gallery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

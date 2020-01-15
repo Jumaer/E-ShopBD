@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Construction Company">
+
+        <menu>
+            <item
+                android:id="@+id/navigation_product2"
+                android:icon="@drawable/business_deal"
+                android:title="Dealing" />
+            <item
+                android:id="@+id/navigation_product3"
+                android:icon="@drawable/full_construction_order"
+                android:title="Full Package Order" />
+            <item
+                android:id="@+id/navigation_product4"
+                android:icon="@drawable/fix_meeting"
+                android:title="Fix Meeting" />
+
+        </menu>
+
+
+
+
+    </item>
+
+
+
+    <item android:title="Single Order">
+
+        <menu>
+            <item
+                android:id="@+id/bricks"
+                android:icon="@drawable/brick"
+                android:title="Order for Bricks"
+                />
+            <item
+                android:id="@+id/cement"
+                android:icon="@drawable/cement"
+                android:title="Order for Cement and Sands" />
+            <item
+                android:id="@+id/rod"
+                android:icon="@drawable/rod"
+                android:title="Order for Rod and metals" />
+            <item
+                android:id="@+id/bathroom_Senitary"
+                android:icon="@drawable/senitary"
+                android:title="Order of Senitary Items" />
+            <item
+                android:id="@+id/electrical_fittings"
+                android:icon="@drawable/electrical_fittings"
+                android:title="Order of Electrical Fittings" />
+            <item
+                android:id="@+id/inner_home_fittings"
+                android:icon="@drawable/inner_home_f"
+                android:title="Others" />
+            <item
+                android:id="@+id/leave"
+                android:icon="@drawable/close_application"
+                android:title="Leave/Close App" />
+
+        </menu>
+
+
+
+    </item>
+
+</menu>

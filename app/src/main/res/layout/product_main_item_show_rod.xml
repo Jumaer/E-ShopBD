@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:longClickable="false"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true">
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/linear_core_bar_rod"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+      >
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/Product_visibility_info_rod"
+            android:background="@color/Sub_colorAppTheme2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/product_rod"
+                android:textColor="@color/colorAppTheme"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:text="Product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/description_visibility_info_rod"
+            android:background="@color/Sub_colorAppTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/description_rod"
+                android:textColor="@color/colorAppTheme"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:text="Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="38dp"
+        android:id="@+id/linear_core_bar2_rod"
+        android:baselineAligned="false"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+        <LinearLayout
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:id="@+id/pro_line"
+            android:background="#FFFF"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="visible"
+            android:orientation="horizontal"
+            android:id="@+id/text_line"
+            android:background="@color/colorAppTheme"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout_display_rod"
+        android:layout_below="@+id/linear_core_bar2_rod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="#FFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/myview"
+                    android:background="#FFFF"
+                    android:visibility="visible"
+                    android:layout_marginTop="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/Product_view_image_rod"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rod_test_image2"
+                        android:layout_width="220dp"
+                        android:layout_height="310dp"  />
+                    <TextView
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:id="@+id/product_name_clue"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/Product_view_image_rod"
+                        android:text="Product name and clues"
+                        android:textSize="21sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/text_price"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/product_name_clue"
+                        android:src="@drawable/taka_big_tag"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:textColor="@color/colorAppTheme"
+                        android:id="@+id/text_price"
+                        android:textSize="30sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/product_name_clue"
+                        android:text="830"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_marginBottom="15dp"
+                        android:weightSum="2"
+                        android:id="@+id/show_Text"
+                        android:layout_below="@+id/text_price"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="270dp"
+                        android:layout_height="30dp">
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textSize="15sp"
+                            android:text="Payment Methods "
+                            android:textColor="#2A2A2B"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginLeft="11dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textSize="11sp"
+                            android:text="Cash/card on delivery\nbkash/online delivery"
+                            android:textColor="#313131"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/myview"
+                    android:layout_width="match_parent"
+                    android:layout_height="580dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_product_calculation"
+                        app:cardElevation="1dp"
+                        app:cardCornerRadius="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="30dp"
+                                app:cardCornerRadius="1dp"
+                                app:cardElevation="1dp"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp">
+
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_below="@+id/card_product_calculation"
+                        app:cardElevation=".5dp"
+                        app:cardCornerRadius="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/linear_core_bar2_rod"
+        android:background="#FFFF"
+        android:visibility="invisible"
+        android:id="@+id/relative_Layout_product_description_rod"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        >
+        <TextView
+            android:textColor="@color/colorAppTheme"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="@string/rod_products_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/text_core_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"/>
+        <TextView
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text_core_heading"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:id="@+id/text_product_description"
+            android:text="@string/core_product_description_rod"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="460dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">BongoBuild</string>
+    <string name="app_name_description_splash">Buy To Make Things Best</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">View Products</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_account">Account</string>
+    <string name="title_any_ques">Query</string>
+    <string name="drawerOpen">Drawer Open</string>
+    <string name="drawerClose">Drawer Close</string>
+    <string name="plumbing">Choose your Product Type</string>
+    <string name="product_description_hint">Product Variations</string>
+    <string name="product_description_hint1">Bricks Type</string>
+    <string name="product_description_hint3">Plumbing Materials</string>
+    <string name="product_description_hint2">Construction Chemicals</string>
+    <string name="product_description_hint4">MM and SS Materials</string>
+    <string name="product_description_hint5">Electrical Products</string>
+    <string name="product_description_hint6">Lighting Gallery</string>
+    <string name="product_description_hint7">Tiles Gallery</string>
+    <string name="product_description_hint8">Thi Aluminium</string>
+    <string name="product_description_hint9">Interior Materials</string>
+    <string name="product_description_hint10">Hardware and Tools</string>
+    <string name="product_description_hint11">Paint Gallery</string>
+    <string name="rod_products_heading"> BSRM Rod</string>
+    <string name="core_product_text_description">Meghna Cement Mills Ltd is the first manufacturing unit of Bashundhara Group
+        and it is one of the largest cement industries in the country producing nearly 1 million metric tons a year.
+        The Meghna Cement Mills Ltd is an International Standard Organization (ISO 9001: 2008) certified company having
+        accreditation of manufacturing products for both domestic and international markets. The company is listed with both
+        Dhaka and Chittagong Stock Exchanges,
+        the two bourses of the country since 1995 and 1996 respectively.
+        The company markets its product under the registered trade mark "King Brand Cement".</string>
+    <string name="core_product_heading">Meghna Cement</string>
+
+    <string name="core_product_description_rod"> A Leading Steel Manufacturer
+
+    BSRM is the leading steel manufacturing
+        company and one of the prominent corporate houses
+        in Bangladesh. Over the years, BSRM steel products have been chosen solely for building major National landmarks and infrastructures. To name a few, the Padma Bridge, Rooppur Neuclear Power Plant, Hatirjheel Project, Zillur Rahman Flyover, Mayor Hanif Flyover and Shah Amanat Bridge were built with BSRM.
+</string>
+
+    A Leading Steel Manufacturer
+
+    BSRM is the leading steel manufacturing company and one of the prominent corporate houses in
+    Bangladesh. Over the years, BSRM steel products have been chosen solely for building major
+    National landmarks and infrastructures. To name a few, the Padma Bridge, Rooppur Neuclear Power
+    Plant, Hatirjheel Project, Zillur Rahman Flyover, Mayor Hanif Flyover and Shah Amanat Bridge
+    were built with BSRM.
+
+</resources>

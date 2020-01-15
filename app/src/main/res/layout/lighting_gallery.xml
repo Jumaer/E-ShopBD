@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Sub_colorAppTheme2"
+    android:clickable="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="200dp"
+        android:id="@+id/interior"
+        app:cardElevation="12dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        app:cardBackgroundColor="#ffff"
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/colorAppTheme"
+            android:layout_marginLeft="100dp"
+            android:text="Interior Light"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/interior"
+        android:id="@+id/exterior"
+        android:layout_marginTop="20dp"
+        app:cardElevation="12dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        app:cardBackgroundColor="#ffff"
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/colorAppTheme"
+            android:layout_marginLeft="100dp"
+            android:text="Exterior Light"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/exterior"
+        android:id="@+id/garden_decoration"
+        android:layout_marginTop="20dp"
+        app:cardElevation="12dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        app:cardBackgroundColor="#ffff"
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/colorAppTheme"
+            android:layout_marginLeft="100dp"
+            android:text="Garden Light"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

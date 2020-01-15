@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CF8F04</color>
+    <color name="colorPrimaryDark">#ECECEC</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorAppTheme">#dd9900</color>
+    <color name="colorAppTheme2">#000000</color>
+    <color name="Sub_colorAppTheme">#ffff</color>
+    <color name="Sub_colorAppTheme2">#ececec</color>
+    <color name="customColor">#dd9900</color>
+
+
+
+</resources>

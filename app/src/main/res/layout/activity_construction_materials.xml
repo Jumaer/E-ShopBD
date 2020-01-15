@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#E9C077"
+        android:id="@+id/card_tool"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:background="#FFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:onClick="openActivity_main"
+                android:id="@+id/back_to_home"
+                android:src="@drawable/arrow_left"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:layout_toLeftOf="@+id/cart"
+
+                android:id="@+id/search"
+                android:layout_centerVertical="true"
+                android:src="@drawable/search"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cart"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cart"
+                android:layout_width="40dp"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_below="@+id/card_tool"
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:background="@color/Sub_colorAppTheme2"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/construction_banner_card"
+                app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                app:cardCornerRadius="2dp"
+                android:elevation="1dp"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/relative_construction_sub_category_part1"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+                    <LinearLayout
+                        android:baselineAligned="false"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cement_card_category"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="2dp"
+                                app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/cement_logo" />
+
+                                </RelativeLayout>
+
+
+
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="2dp"
+                                android:id="@+id/rod_card_category"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="8dp"
+                                app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/rod_logo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/relative_construction_sub_category_part1"
+                    android:id="@+id/relative_construction_sub_category_part2"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:baselineAligned="false"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/brick_card_category"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="2dp"
+                                app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/brick_logo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/stone_card_category"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="2dp"
+                                app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/stone_logo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/relative_construction_sub_category_part2"
+                    android:id="@+id/relative_construction_sub_category_part3"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:baselineAligned="false"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/sand_card_category"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="2dp"
+                                app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/sand_logo" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/block_card_category"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="8dp"
+                                app:cardCornerRadius="2dp"
+                                app:cardBackgroundColor="@color/Sub_colorAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/block_logo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+
+
